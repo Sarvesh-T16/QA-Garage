@@ -1,3 +1,5 @@
+package Garage;
+
 public class Motorbike extends Vehicle{
     private int cc;
     private String bikeType;

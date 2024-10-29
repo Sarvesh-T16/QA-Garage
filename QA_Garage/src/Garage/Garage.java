@@ -1,3 +1,5 @@
+package Garage;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,7 +16,7 @@ public class Garage {
 
     public void addVehicle(Vehicle vehicle){
         vehicles.add(vehicle);
-        System.out.println("Vehicle added "+vehicle);
+        System.out.println("Garage.Vehicle added "+vehicle);
 
     }
 
@@ -49,13 +51,13 @@ public class Garage {
         double bill = 0;
         for (Vehicle vehicle: vehicles){
             switch (vehicle.getClass().getName()){
-                case "Car":
+                case "Garage.Car":
                     bill+=100;
                     break;
-                case "Motorbike":
+                case "Garage.Motorbike":
                     bill+=50;
                     break;
-                case "Tractor":
+                case "Garage.Tractor":
                     bill+=200;
                     break;
                 }

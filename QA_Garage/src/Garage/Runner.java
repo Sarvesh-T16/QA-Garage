@@ -1,5 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
+package Garage;
 
 public class Runner {
     public static void main(String[] args) {
@@ -12,7 +11,7 @@ public class Runner {
         System.out.println(bike1);
         System.out.println(tractor1);
 
-//        List<Vehicle> vehicleList = new ArrayList<>();
+//        List<Garage.Vehicle> vehicleList = new ArrayList<>();
 //
 //
         Garage garage1 = new Garage();
@@ -20,7 +19,7 @@ public class Runner {
         garage1.addVehicle(tractor1);
         garage1.addVehicle(bike1);
         garage1.removeVehicle(3);
-        garage1.removeType("Car");
+        garage1.removeType("Garage.Car");
 //        garage1.emptyGarage();
         garage1.displayVehicles();
         System.out.println(garage1.calculateBill());

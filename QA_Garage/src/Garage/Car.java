@@ -1,3 +1,5 @@
+package Garage;
+
 public class Car extends Vehicle{
 
     private int doors;
@@ -28,7 +30,7 @@ public class Car extends Vehicle{
 
     @Override
     public String toString() {
-        return "Car{" +
+        return "Garage.Car{" +
                 "doors=" + doors +
                 ", tint=" + tint +
                 "} " + super.toString();

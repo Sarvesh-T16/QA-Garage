@@ -1,3 +1,5 @@
+package Garage;
+
 public class Tractor extends Vehicle{
 
     private float tyreSize;
@@ -27,7 +29,7 @@ public class Tractor extends Vehicle{
 
     @Override
     public String toString() {
-        return "Tractor{" +
+        return "Garage.Tractor{" +
                 "tyreSize=" + tyreSize +
                 ", maxLoad=" + maxLoad +
                 "} " + super.toString();

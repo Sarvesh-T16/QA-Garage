@@ -1,3 +1,5 @@
+package Garage;
+
 public abstract class Vehicle {
     private int year;
     private String company;
@@ -46,7 +48,7 @@ public abstract class Vehicle {
 
     @Override
     public String toString() {
-        return "Vehicle{" +
+        return "Garage.Vehicle{" +
                 "year=" + year +
                 ", company='" + company + '\'' +
                 ", wheels=" + wheels +
