@@ -1,5 +1,7 @@
 package Inventory;
 
+import java.time.LocalDate;
+
 public class Runner {
     public static void main(String[] args) {
         Inventory inventory1 = new Inventory();
@@ -16,7 +18,15 @@ public class Runner {
         System.out.println(inventory1.toString());
 
         inventory1.updateCustomer(1,"name","Jordan Short");
-        System.out.println(inventory1.toString());
+        inventory1.deleteCustomer(customer3);
+        System.out.println(inventory1);
+
+        Orders orders1 = new Orders();
+        Order order1 = new Order(1, 1, LocalDate.of(2024,10,29));
+        orders1.addOrder(order1);
+
+        orders1.updateOrders(1, "customer_id", "2");
+        System.out.println(orders1);
 
     }
 }

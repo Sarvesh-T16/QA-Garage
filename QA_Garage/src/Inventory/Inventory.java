@@ -21,6 +21,9 @@ public class Inventory {
         productList.add(product);
     }
 
+    public void deleteCustomer(Customer customer) { customerList.remove(customer);}
+    public void deleteCustomer(Product product) { customerList.remove(product);}
+
     //Remove Customer and Product
     public void removeCustomer(Customer customer){
         customerList.remove(customer);
