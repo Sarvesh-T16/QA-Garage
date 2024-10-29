@@ -1,7 +1,8 @@
 package Inventory;
 
 import java.time.LocalDate;
-
+import java.util.ArrayList;
+import java.util.List;
 public class Runner {
     public static void main(String[] args) {
         Inventory inventory1 = new Inventory();
@@ -21,12 +22,14 @@ public class Runner {
         inventory1.deleteCustomer(customer3);
         System.out.println(inventory1);
 
-        Orders orders1 = new Orders();
-        Order order1 = new Order(1, 1, LocalDate.of(2024,10,29));
-        orders1.addOrder(order1);
+        OrderList orderList1 = new OrderList();
+        List<Product> test_list = new ArrayList<Product>();
+        Order order1 = new Order(1, 1, LocalDate.of(2024,10,29), test_list);
+        orderList1.addOrder(order1);
 
-        orders1.updateOrders(1, "customer_id", "2");
-        System.out.println(orders1);
+        orderList1.updateOrders(1, "customer_id", "2");
+        order1.addProduct(product1);
+        System.out.println(orderList1);
 
     }
 }

@@ -3,12 +3,12 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.ArrayList;
 
-public class Orders {
+public class OrderList {
 
     private List<Order> orders = new ArrayList<Order>();
 
-    public Orders(){};
-    public Orders(List<Order> orders) {
+    public OrderList(){};
+    public OrderList(List<Order> orders) {
         this.orders = orders;
     }
 
