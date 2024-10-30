@@ -13,5 +13,9 @@ public class Runner {
 
         patron1.borrowBook(library1);
 
+        // Displaying all books and patrons
+        library1.displayBooks();
+        patronList1.displayPatrons();
+
     }
 }

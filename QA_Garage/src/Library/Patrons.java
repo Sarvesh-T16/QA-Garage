@@ -72,4 +72,13 @@ public class Patrons {
             System.out.println("Book already returned.");
         }
     }
+
+    @Override
+    public String toString() {
+        return "Patrons{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", borrowed=" + borrowed +
+                '}';
+    }
 }

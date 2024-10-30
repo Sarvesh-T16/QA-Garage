@@ -24,4 +24,8 @@ public class PatronsList {
     public void addPatron(Patrons patrons){
         patronsList.add(patrons);
     }
+
+    public void displayPatrons() {
+        patronsList.forEach(System.out::println);
+    }
 }

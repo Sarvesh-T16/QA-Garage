@@ -26,4 +26,8 @@ public class Library {
     public void addBook(Book book){
         bookList.add(book);
     }
+
+    public void displayBooks() {
+        bookList.forEach(System.out::println);
+    }
 }
